@@ -19,9 +19,10 @@ export default function HeroVideo() {
       setCurrentIndex(nextIndex);
     };
 
-    // Include textRotationInterval and currentIndex in the dependency array
+    // Interval to update heroText based on currentIndex
     const intervalId = setInterval(updateText, textRotationInterval[currentIndex].duration);
 
+    // Clean up the interval when the component unmounts or when dependencies change
     return () => clearInterval(intervalId);
   }, [currentIndex, textRotationInterval]); // Include currentIndex and textRotationInterval in the dependency array
 
@@ -44,4 +45,3 @@ export default function HeroVideo() {
     </div>
   );
 }
-

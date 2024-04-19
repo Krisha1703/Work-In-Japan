@@ -1,8 +1,15 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+// Define the interface for props
+interface ContainerProps {
+  heading: string;
+  imageSrc: string;
+  paragraphText: string;
+}
 
-export default function Container({ heading, imageSrc, paragraphText }) {
+// Use the defined interface as the type for props
+export default function Container({ heading, imageSrc, paragraphText }: ContainerProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
