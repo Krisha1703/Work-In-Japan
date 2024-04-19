@@ -9,25 +9,25 @@ export default function Introduction(){
                 <Container
                     heading="Cutting-Edge Innovation"
                     imageSrc="/media/innovation.jpeg"
-                    paragraphText="Japan is renowned for its cutting-edge technology and innovative industries. By working in Japan, you'll be at the forefront of technological advancements, contributing to groundbreaking projects and collaborating with world-class experts."
+                    paragraphText="Japan is renowned for its cutting-edge technology and innovative industries. By working in Japan, you will be at the forefront of technological advancements, contributing to groundbreaking projects and collaborating with world-class experts."
                 />
 
                     <Container
                     heading="Cultural Experience"
                     imageSrc="/media/culture.jpg"
-                    paragraphText="Immerse yourself in Japan's rich cultural heritage and traditions. Explore historic landmarks, participate in traditional ceremonies, and enjoy the vibrant arts scene that Japan has to offer."
+                    paragraphText="Immerse yourself in rich cultural heritage and traditions. Explore historic landmarks, participate in traditional ceremonies, and enjoy the vibrant arts scene that Japan has to offer."
                 />
 
                 <Container
                     heading="Business Opportunities"
                     imageSrc="/media/business.jpeg"
-                    paragraphText="Elevate your business presence in Japan by tapping into one of the world's largest and most sophisticated markets. Build strategic partnerships, access cutting-edge technologies, and expand your global footprint."
+                    paragraphText="Elevate your business presence in Japan by tapping into one of the largest and most sophisticated markets. Build strategic partnerships, access cutting-edge technologies, and expand your global footprint."
                 />
 
                 <Container
                     heading="Travel & Exploration"
                     imageSrc="/media/explore.webp"
-                    paragraphText="Discover the beauty of Japan's landscapes and attractions. From bustling cities to serene countryside, Japan offers endless possibilities for exploration and adventure."
+                    paragraphText="Discover the beauty of landscapes and attractions. From bustling cities to serene countryside, Japan offers endless possibilities for exploration and adventure."
                 />
 
             </div>

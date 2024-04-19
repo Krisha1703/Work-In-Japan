@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function SearchJob(){
     return(
         <main className="flex p-4 bg-blue-100 py-4 pt-10">
@@ -17,7 +18,7 @@ export default function SearchJob(){
             </section>
 
             <section>
-                <img src="/media/job.jpg" className="w-30 rounded-lg"/>
+                <Image alt="Jobs" src="/media/job.jpg" width={800} height={800} className="w-30 rounded-lg"/>
             </section>
 
         </main>

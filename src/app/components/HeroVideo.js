@@ -1,5 +1,5 @@
 "use client"
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 export default function HeroVideo() {
   const [heroText, setHeroText] = useState('');
@@ -13,33 +13,35 @@ export default function HeroVideo() {
 
   useEffect(() => {
     const updateText = () => {
+      // Use currentIndex directly from the state to ensure it's up-to-date
       setHeroText(textRotationInterval[currentIndex].text);
       const nextIndex = (currentIndex + 1) % textRotationInterval.length;
       setCurrentIndex(nextIndex);
     };
 
+    // Include textRotationInterval and currentIndex in the dependency array
     const intervalId = setInterval(updateText, textRotationInterval[currentIndex].duration);
 
     return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  }, [currentIndex, textRotationInterval]); // Include currentIndex and textRotationInterval in the dependency array
 
-    return (
-      <div className="w-full">
-        <video
-          className="w-full h-40 sm:h-60 md:h-80 lg:h-96 object-cover relative"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/media/hero_video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+  return (
+    <div className="w-full">
+      <video
+        className="w-full h-40 sm:h-60 md:h-80 lg:h-96 object-cover relative"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/media/hero_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-        <div className="absolute sm:top-1/2 top-1/3 md:top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white text-center rounded-md p-2 bg-blue-800">
-            <h1 className="md:text-3xl sm:text-xl text-lg font-bold mb-2">{heroText}</h1>
-        </div>
-
+      <div className="absolute sm:top-1/2 top-1/3 md:top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center rounded-md p-2 bg-blue-800">
+        <h1 className="md:text-3xl sm:text-xl text-lg font-bold mb-2">{heroText}</h1>
       </div>
-    );
-  }
+    </div>
+  );
+}
+

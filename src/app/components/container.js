@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function Container({ heading, imageSrc, paragraphText }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,10 +27,12 @@ export default function Container({ heading, imageSrc, paragraphText }) {
         {isHovered ? (
           <p className="text-white md:text-sm text-xs text-center">{paragraphText}</p>
         ) : (
-          <img
+          <Image
             src={imageSrc}
             alt="Image"
             className="w-full"
+            width={200}
+            height={200}
             style={{ transition: 'opacity 0.3s ease-in-out' }}
           />
         )}
