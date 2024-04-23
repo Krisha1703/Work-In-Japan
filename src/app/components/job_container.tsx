@@ -13,7 +13,7 @@ export interface ContainerProps {
   }
 
   
-export default function({ Title, Company, Location, Industry, Salary, Type, imageSrc, Experience }: ContainerProps){
+  const JobContainer = ({ Title, Company, Location, Industry, Salary, Type, imageSrc, Experience }: ContainerProps) => {
     // Function to determine background color based on Industry
   const getBgColor = (industry: string) => {
     switch (industry.toLowerCase()) {
@@ -68,3 +68,4 @@ export default function({ Title, Company, Location, Industry, Salary, Type, imag
         </section>
     )
 }
+export default JobContainer;

@@ -3,15 +3,16 @@ import React, { useState, useEffect } from "react";
 
 export default function HeroVideo() {
   const [heroText, setHeroText] = useState('');
-  const textRotationInterval = [
-    { text: 'Explore Job Opportunities in Japan', duration: 3000 },
-    { text: "Immerse Yourself in Japan's Rich Culture", duration: 3000 },
-    { text: 'Elevate Your Business Presence in Japan', duration: 4000 },
-    { text: 'Begin Your Search Here', duration: 3000 }
-  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
+    const textRotationInterval = [
+      { text: 'Explore Job Opportunities in Japan', duration: 3000 },
+      { text: "Immerse Yourself in Japan's Rich Culture", duration: 3000 },
+      { text: 'Elevate Your Business Presence in Japan', duration: 4000 },
+      { text: 'Begin Your Search Here', duration: 3000 }
+    ];
+
     const updateText = () => {
       // Use currentIndex directly from the state to ensure it's up-to-date
       setHeroText(textRotationInterval[currentIndex].text);
@@ -24,7 +25,7 @@ export default function HeroVideo() {
 
     // Clean up the interval when the component unmounts or when dependencies change
     return () => clearInterval(intervalId);
-  }, [currentIndex, textRotationInterval]); // Include currentIndex and textRotationInterval in the dependency array
+  }, [currentIndex]); // Include currentIndex and textRotationInterval in the dependency array
 
   return (
     <div className="w-full relative">
