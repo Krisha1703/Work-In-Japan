@@ -1,8 +1,9 @@
 import Navbar from "./Navbar";
 import HeroVideo from "./HeroVideo";
-import FilterJobs from "./search";
-import Introduction from "./Introduction";
 import SearchJob from "./jobs";
+import JobListing from "./Job_Listing";
+import Introduction from "./Introduction";
+
 import Footer from "./Footer";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
     <div>
       <Navbar />
       <HeroVideo />
-      <FilterJobs />
+      <JobListing />
       <Introduction />
       <SearchJob />
       <Footer />

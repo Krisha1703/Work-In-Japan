@@ -8,8 +8,18 @@
   margin: 0vw 1vw;
   -webkit-text-stroke-width: 0vw;
   -webkit-text-stroke-color: white;
-  background: linear-gradient(to top, #ffffff, #ffffff, #ffffff, #ff0000, #ff0000, #ff0000, #ff0000,#ffffff, #ffffff, #ffffff, #ffffff); /* Blue gradient */
+  background: linear-gradient(to top, #ffffff, #ffffff, #ff0000,#ffffff, #ffffff); /* Blue gradient */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Hide the text fill color */
+}
+
+/*CSS for job containers*/
+.container{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  transform: rotateX(30deg);
+}
+.container:hover{
+  transform: rotateX(0deg);
+  transition-duration: 2s;
 }
 

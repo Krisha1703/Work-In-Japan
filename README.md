@@ -1,3 +1,23 @@
+## Work in Japan
+
+![Navbar and hero video](/Output/img1.png)
+![Job listing and filtering](/Output/img2.png)
+![Job listing and filtering](/Output/img3.png)
+![Work benefits in Japan](/Output/img4.png)
+![Explore more jobs](/Output/img5.png)
+![Responsive Navbar and hero video](/Output/img6.png)
+![Responsive job listing and filtering](/Output/img7.png)
+![Responsive footer](/Output/img8.png)
+
+## Features
+- Fully Responsive Design
+- Dynamic Hero Video
+- Job Listing Section with Filtering and Searching
+- Visually Appealing and User-Friendly Interface
+- Dedicated Section on Why Work in Japan
+- Animated Job Containers
+- Toggle Button Animation and Transition
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

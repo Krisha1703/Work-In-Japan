@@ -1,3 +1,4 @@
+/*Container for benefits of working in Japan*/
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';

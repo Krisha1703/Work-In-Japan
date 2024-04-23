@@ -27,9 +27,9 @@ export default function HeroVideo() {
   }, [currentIndex, textRotationInterval]); // Include currentIndex and textRotationInterval in the dependency array
 
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <video
-        className="w-full h-40 sm:h-60 md:h-80 lg:h-96 object-cover relative"
+        className="w-full h-40 sm:h-60 md:h-80 lg:h-96 object-cover"
         autoPlay
         muted
         loop
@@ -39,8 +39,8 @@ export default function HeroVideo() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute sm:top-1/2 top-1/3 md:top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center rounded-md p-2 bg-blue-800">
-        <h1 className="md:text-3xl sm:text-xl text-lg font-bold mb-2">{heroText}</h1>
+      <div className="absolute sm:top-2/3 top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center rounded-md p-2 bg-blue-800">
+        <h1 className="md:text-2xl sm:text-lg text-sm font-bold mb-2">{heroText}</h1>
       </div>
     </div>
   );

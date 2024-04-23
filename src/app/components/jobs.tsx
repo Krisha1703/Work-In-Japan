@@ -1,10 +1,10 @@
 import Image from 'next/image';
 export default function SearchJob(){
     return(
-        <main className="flex p-4 bg-blue-100 py-4 pt-10">
+        <main className="sm:flex block p-4 bg-blue-100 py-4 pt-10">
 
             <section>
-
+                {/*Last section of the page prompting users to exaplore more jobs*/}
                 <article className="max-w-30 mx-6 ">
                     <h1 className="text-blue-800 font-bold sm:text-3xl text-xl">Discover more than 4500+ jobs</h1>
                     <p className="text-blue-800 font-medium sm:text-lg text-sm my-2">Explore our curated list of job opportunities and discover the perfect role that aligns with your aspirations. Begin your journey to a rewarding career in Japan today!</p>

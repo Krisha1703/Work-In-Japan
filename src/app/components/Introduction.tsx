@@ -1,6 +1,7 @@
 import Container from "./container"
 export default function Introduction(){
     return(
+        /*Section for listing all the benefits of working in Japan*/
         <section className="bg-blue-100 py-2 pt-10">
             <h2 className="text-blue-800 text-3xl font-bold text-center mb-2">Why work in Japan?</h2>
             <p className="text-lg text-blue-800 font-semibold mx-20 mb-2">Are you considering a career opportunity abroad? Look no further than Japan—a country that offers a unique blend of innovation, tradition, and unmatched professional growth. Here is why working in Japan can be a transformative experience:</p>
