@@ -1,13 +1,13 @@
 ## Work in Japan
 
-![Navbar and hero video](/Output/img1.png)
-![Job listing and filtering](/Output/img2.png)
-![Job listing and filtering](/Output/img3.png)
-![Work benefits in Japan](/Output/img4.png)
-![Explore more jobs](/Output/img5.png)
-![Responsive Navbar and hero video](/Output/img6.png)
-![Responsive job listing and filtering](/Output/img7.png)
-![Responsive footer](/Output/img8.png)
+![Navbar and hero video](public/Output/img1.png)
+![Job listing and filtering](public/Output/img2.png)
+![Job listing and filtering](public/Output/img3.png)
+![Work benefits in Japan](public/Output/img4.png)
+![Explore more jobs](public/Output/img5.png)
+![Responsive Navbar and hero video](public/Output/img6.png)
+![Responsive job listing and filtering](public/Output/img7.png)
+![Responsive footer](public/Output/img8.png)
 
 ## Features
 - Fully Responsive Design
