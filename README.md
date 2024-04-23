@@ -5,10 +5,10 @@
 ![Job listing and filtering](public/Output/img3.png)
 ![Work benefits in Japan](public/Output/img4.png)
 ![Explore more jobs](public/Output/img5.png)
-<img src="public/Output/img6.png" alt="Responsive Navbar and hero video" width="300" height="600" />
-![Responsive Navbar and hero video](public/Output/img6.png)
-![Responsive job listing and filtering](public/Output/img7.png)
-![Responsive footer](public/Output/img8.png)
+<img src="public/Output/img6.png" alt="Responsive Navbar and hero video" width="400" height="600" />
+<img src="public/Output/img7.png" alt="Responsive job listing and filtering" width="400" height="600" />
+<img src="public/Output/img8.png" alt="Responsive footer" width="400" height="600" />
+
 
 ## Features
 - Fully Responsive Design
