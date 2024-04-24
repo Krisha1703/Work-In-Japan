@@ -15,17 +15,17 @@ export default function FilterJobs({ onLocationChange, onIndustryChange, onKeywo
 
   const handleLocationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
-    setLocation(value); //set the filtered location as the input location entered user
+    setLocation(value.toLowerCase()); //set the filtered location as the input location entered user
   };
 
   const handleIndustryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
-    setIndustry(value); //set the filtered industry as the input industry entered user
+    setIndustry(value.toLowerCase()); //set the filtered industry as the input industry entered user
   };
 
   const handleKeywordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target; //set the filtered keyword as the input keyword entered user
-    setKeyword(value);
+    setKeyword(value.toLowerCase());
   };
 
   // Handle form submission when the user clicks the submit button
